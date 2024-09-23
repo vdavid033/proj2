@@ -1,89 +1,84 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.13.2/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.13.2/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.13.2/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.13.2/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.13.2/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.13.2/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.13.2/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.13.2/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.13.2/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.13.2/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videoteka</title>
+    <!--link rel="stylesheet" href="./css/stil.css"-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<body>
+    <div class="w3-bar w3-black">
+        
+        <h1><img src="pngwing.com.png" alt="" width="100">Videoteka</h1>
+        <a href="index.html" class="w3-bar-item w3-button w3-round w3-grey">Početna</a>
+        <a href="filmovi.html" class="w3-bar-item w3-button w3-round">Popis filmova</a>
+        <a href="rezervacija_filmova.php" class="w3-bar-item w3-button w3-round">Rezervacija filmova</a>        
+        <a href="kontakt.html" class="w3-bar-item w3-button w3-round">Kontakt</a>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <div class="w3-container w3-responsive">
+        <div>Dobrodošli u videoteku</div>
+        <h2>Aktualni filmovi</h2>
+ 
+        <div class="w3-card w3-margin">
+            <div class="w3-bottombar w3-border-teal">
+            <h3><b>No One Will Save You</b></h3>
+            </div>
+            <hr>
+            <div class="w3-row w3-grey w3-margin w3-card-4 ">
+                <div class="w3-twothird">
+                    <h5>
+                    <b>Glumci:</b><br>
+                    Kaitlyn Dever as Brynn <br>
+                    Zack Duhame as the mailman <br>
+                    Lauren Murray as Brynn's mother <br>
+                    Geraldine Singer as Mrs. Collins <br>
+                    Dane Rhodes as police chief Collins <br>
+                    Daniel Rigamer as Mr. McCreary <br>
+                    Dari Lynn Griffin as Maude
+                    </h5>
+                </div>
+                <div class="w3-third">
+                <a 
+                href="https://www.imdb.com/title/tt14509110/" 
+                target="_blank">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/en/a/af/No-one-will-save-you-poster.jpg"
+                    width="100%" 
+                    alt="No-one-will-save-you-poster" 
+                    class="w3-round w3-card-4 w3-hover-opacity">
+                </a>
+                </div>
+            </div>
+        </div>
+        <div class="w3-card w3-margin">
+            <h3><b>Transformers: Rise of the Beasts 2023</b></h3>
+            <h5>Anthony Ramos as Noah Diaz <br>
+                    Dominique Fishback as Elena Wallace <br>
+                    Luna Lauren Vélez as Breanna Diaz, Noah's mother. <br>
+                    Peter Cullen as Optimus Prime <br>
+                    Ron Perlman as Optimus Primal <br>
+                    Peter Dinklage as Scourge <br>
+            </h5>
+            <a 
+                href="https://www.imdb.com/title/tt5090568/" 
+                target="_blank">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/en/1/1c/Transformers-_Rise_of_the_Beasts.jpg"
+                    width="150px" 
+                    alt="" 
+                    class="w3-round w3-card-4 w3-hover-opacity">
+            </a>
+        </div>
+        </table>
+        </div>
+    </div>
+    <div class="w3-container w3-black">Više informacija možete naći na <a href="https://www.imdb.com/"
+            target="_blank">IMDB.com</a></div>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+</body>
+
 </html>
